@@ -1,0 +1,394 @@
+:root {
+    --primary-color: #ced3d7; /* Bright Azure Blue aeb5bc */
+    --secondary-color: #82e7f2ed; /* Soft Green */
+    --accent-color: #91bad8; /* Warm Amber */
+    --background-color: #071725; /* Light Blue-White 091925 */ 
+    --text-color: #aeb5bc; /* Dark Charcoal */
+    --node-color: #B3D4FC; /* Light Azure Blue */
+}
+
+#letsconnect {
+    display: flex; /* Enable flexbox */
+    justify-content: center ; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack the items vertically */
+    min-height: 70vh; /* Ensure the section takes full height */
+    background-color: var(--background-color); /* Optional: Match theme */
+    color: var(--text-color); /* Ensure text color matches theme */
+  }
+
+  /* Center content in the container */
+#letsconnect .container {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align all items horizontally */
+    align-items: flex-start;
+}
+
+  
+  /* Hover Effect for Links */
+  .contact-link:hover {
+    color: var(--secondary-color); /* Change color on hover */
+  }
+  
+/* Contact Item Styling */
+.contact-item {
+    display: flex; /* Enables side-by-side alignment */
+    align-items: center !important; /* Vertically aligns the icon and text */
+    gap: 40px; /* Adds space between the icon and the text */
+    margin-bottom: 2.5rem; /* Adds space between rows */
+  }
+
+  .center-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 60vh;           /* Full height of the viewport */
+    text-align: center;      /* Center the text inside */
+}
+
+  /* Icon Styling */
+  .contact-icon {
+    font-size: 2.4rem; /* Adjust icon size */
+    color: var(--accent-color); /* Use an accent color */
+  }
+  
+  /* Text Styling */
+  .contact-link {
+    font-family: 'Poppins', sans-serif; /* Clean font */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: 500; /* Slightly bold for readability */
+    color: var(--primary-color); /* Match theme text color */
+    margin: 0; /* Removes default margins */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/*Download cv button*/
+.btn-outline-primary {
+    background-color: transparent;
+    color: var(--secondary-color); /* Bright blue */
+    border: 2px solid var(--secondary-color); /* Border matches text color */
+    border-radius: 5px; /* Soft rounded corners */
+    padding: 0.5rem 1.5rem; /* Adjust padding for a balanced size */
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect */
+.btn-outline-primary:hover {
+    background-color: var(--secondary-color); /* Bright blue background */
+    color: var(--background-color); 
+    border: 2px solid var(--secondary-color); /* Border remains blue */
+    transform: translateY(-2px); /* Subtle lift effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+
+/* Default link color */
+.navbar .nav-link {
+    color: #d8dadd !important;
+}
+
+/* Make the links darker on the home page */
+.navbar .nav-link.active {
+    background-color: #82e7f2ed ;
+    color: var(--background-color) !important; /* Darker color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Adjust padding for better appearance */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar .nav-link:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color) !important; /* Highlight color on hover */
+    border-radius: 15px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Adjust padding for better appearance */
+    transition: all 0.4s ease; /* Smooth transition effect */
+}
+
+.navbar {
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+    padding: 1rem 0;
+}
+
+.navbar-scrolled {
+    background-color: #a4a8aa  !important;
+    color: var(--background-color)!important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--background-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Style for nav-link when scrolled */
+.nav-link-scrolled {
+    color: var(--primary-color) !important; /* Dark blue */
+    transition: color 0.3s ease-in-out;
+    
+}
+
+
+
+.display-1{
+    color: var(--primary-color);
+}
+
+/*MY HEADING*/
+.myheadings{
+    color: var(--primary-color);
+}
+
+#home {
+    background: var(background-color);
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#home h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.memoji-image {
+    width: 140px; /* Adjust the width to make the image smaller */
+    height: 180px; /* Match the height to keep the image circular */
+    /*border-radius: 100%; /* Keeps the image circular */
+    border: none; /* Optional: Add border */
+    /*object-fit: cover; /* Ensures the image fits within the circle */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.circle-img {
+    width: 150px; /* Set width */
+    height: 150px; /* Set height */
+    border-radius: 50%; /* Makes it a circle */
+    object-fit: cover; /* Ensures the image covers the area */
+    border: 2px solid #000; /* Optional: Add a border */
+}
+
+.btn:hover{
+    border: 1px solid black;
+}
+
+.btn-primary:active{
+    background-color:black !important;
+    border-color: 1px solid black;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-color: var(--primary-color);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border:none;
+}
+
+/*MYSKILLS SECTION
+/* Skills Section Styling */
+#skills {
+    background-color: var(--background-color); /* Set background color */
+    color: var(--text-color); /* Default text color */
+    padding: 5rem 0; /* Add spacing to the section */
+}
+
+
+/*LOGO */
+/* Flex container for logo and title */
+/* Flex container for logo and title */
+.logo-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns logo and title vertically in the center */
+    gap: 10px; /* Adds space between logo and title */
+    margin-bottom: 1rem; /* Optional: Adds space below the container */
+}
+
+/* Logo styling */
+.card-logo {
+    width: 40px; /* Set logo size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners */
+    display: block; /* Ensures it's treated correctly in the flex container */
+}
+
+/* Title styling */
+.card-title {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    color: black; /* Text color */
+    font-size: 1.2rem; /* Adjust size */
+    font-weight: 600; /* Make text bold */
+    margin: 0; /* Removes default margin */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+
+
+.card {
+    background-color: var(--text-color)!important;
+    color: black!important;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+#contact .form-control {
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0;
+    padding: 1.5rem 0.75rem;
+    background-color: transparent;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--accent-color);
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-color) !important;
+    transform: translateY(-3px);
+}
+.img-fluid{
+    width: 85%;
+}
+
+.card-text{
+    font-size: 12px;
+}
+
+
+/*FOOTER*/
+footer {
+    padding: 1rem 0; /* Reduce top and bottom padding */
+}
+
+/* Adjust footer text and icon spacing */
+footer .myheadings {
+    margin: 0; /* Remove default margin around the text */
+    font-size: 0.9rem; /* Optional: Slightly smaller font size */
+}
+
+footer .social-links {
+    margin-top: 0rem !important; /* Reduce the space above the social icons */
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Custom animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.float {
+    animation: float 6s ease-in-out infinite;
+}
+.btn {
+    position: relative;
+    z-index: 10;
+}
+
+#experience h2 {
+    padding-top: 80px; /* Adjust based on your navbar height */
+}
+
+#education h2 {
+    padding-top: 80px;
+}
+
+#about h2{
+    padding-top: 80px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 5px; /* Adjust spacing between items */
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Optional: Adjust width as needed */
+    margin: 0 auto; /* Centers the grid */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    text-align: center;
+}
+
+
+
+
