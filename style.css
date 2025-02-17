@@ -23,6 +23,8 @@
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center align all items horizontally */
     align-items: flex-start;
+    justify-content: center 
+    /*padding-left: 425px;*/
 }
 
   
@@ -370,25 +372,9 @@ footer .social-links {
 #about h2{
     padding-top: 80px;
 }
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 5px; /* Adjust spacing between items */
-    justify-content: center;
-    align-items: center;
-    max-width: 600px; /* Optional: Adjust width as needed */
-    margin: 0 auto; /* Centers the grid */
+#letsconnect{
+    padding-top: 80px;
 }
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between icon and text */
-    text-align: center;
-}
-
 
 
 
